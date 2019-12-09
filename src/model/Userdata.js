@@ -1,15 +1,14 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/ProductDB');
 const Schema = mongoose.Schema;
 
 var NewUserSchema = new Schema({
-    firstName : String,
-    lastName : String,
-    userName : String,
+    fname : String,
+    lname : String,
+    uname : String,
     password : String,
     confirmPassword : String,
     email : String,
-    phoneNumber : Number,
+    phone : Number,
     gender : String,
     address : String
 });
